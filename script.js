@@ -140,40 +140,90 @@
 
 // }
 
-// let number = prompt("Escolha uma opção(1 - saque, 2 - transferência, 3 - extrato, 4 -saldo):").toLowerCase();
+// let number = prompt("Escolha uma opção: \n1 - saque\n2 - transferência\n3 - extrato\n4 -saldo").toLowerCase();
 
 // switch (number){
 //     case '1':
 //         alert("Saque Efetuado");
+//         break
 //     case '2':
 //         alert("Transferência feita");
+//         break
 //     case '3':
-//         alert("Seu extrato é de");
+//         alert("Seu extrato é de R$ 1000,00");
+//         break
 //     case '4':
 //         alert("Seu saldo atual é de 00,00");
+//         break
 //     default:
-//         alert("Opção inválida");    
+//         alert("Opção inválida");
+//         break
+
 // }
 
-let operação = prompt("Escolha uma operação: +, -, *, ou /");
-let n1 = Number(prompt("Digite o primeiro número:"));
-let n2 = Number(prompt("Digite o segundo número:"));
+// let operação = prompt("Escolha uma operação: +, -, *, ou /");
+// let n1 = Number(prompt("Digite o primeiro número:"));
+// let n2 = Number(prompt("Digite o segundo número:"));
 
-switch (operação){
-    case '+':
-        resultado = n1 + n2
-        break
-    case '-':
-        resultado = n1 - n2
-        break
-    case '*':
-         resultado = n1 * n2
-         break
-    case '/':
-         resultado = n2 !== 0 ? n1/n2 : "Erro de divisão por zero!";
-         break
-         default:
-            resultado = "Operação inválida!";
-            break
+// switch (operação){
+//     case '+':
+//         resultado = n1 + n2
+//         break
+//     case '-':
+//         resultado = n1 - n2
+//         break
+//     case '*':
+//          resultado = n1 * n2
+//          break
+//     case '/':
+//          resultado = n2 !== 0 ? n1/n2 : "Erro de divisão por zero!";
+//          break
+//          default:
+//             resultado = "Operação inválida!";
+//             break
+// }
+// alert("Resultado: " + resultado);
+
+// for (let i = 10; i >= 1; i--){
+//     console.log(i)
+// }
+// for (let i = 0; i <= 10; i++){
+//     console.log(i +' passos')
+// }
+// for (let i = 0; i <= 10; i += 2){
+//     console.log(`Passo ${i}`)
+// }
+
+// let numero = Number(prompt("Digite um número para ver a tabuada:"));
+
+// let tabuada = ""; //string acumuladora
+
+// for (let i = 1; i <= 10; i++){
+//     tabuada += `${numero} x ${i} = ${numero * i}\n`;
+// }
+// alert(tabuada)
+
+// let senha = Number(prompt("Digite sua senha:"));
+
+// while (senha !== 1234) {
+//     senha = Number(prompt("Senha inválida. Tente novamente"));
+// }
+// alert("Acesso concedido");
+
+// let palavra = prompt("Digite uma palavra");
+// let resultado = ("")
+// for (let i = 1; i <=5; i++){
+//     resultado += `${i} - ${palavra}\n`
+// }
+// alert(resultado)
+
+let numero = Number(prompt("Digite um número acima de 4"))
+
+while (numero > 0){
+    if (numero % 2 === 0){
+        console.log(`numero par: ${numero}`);
+    } else {
+        console.log(`número ímpar: ${numero}`);
+    } numero --;
 }
-alert("Resultado: " + resultado);
+console.log("chegou a zero!")
